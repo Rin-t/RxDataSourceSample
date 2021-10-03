@@ -19,7 +19,7 @@ class SettingsViewController: UIViewController {
 
     private lazy var dataSource = RxTableViewSectionedReloadDataSource<SettingsSectionModel>(configureCell: configureCell)
 
-    private lazy var configureCell: RxTableViewSectionedReloadDataSource<SettingsSectionModel>.ConfigureCell = {  [weak self] (dateSource, tableView, indexPath, _) in
+    private lazy var configureCell: RxTableViewSectionedReloadDataSource<SettingsSectionModel>.ConfigureCell = { [weak self] (dateSource, tableView, indexPath, _) in
         let item = self?.dataSource[indexPath]
         switch item {
         case .account, .security, .notification, .contents, .sounds, .dataUsing, .accessibility:
