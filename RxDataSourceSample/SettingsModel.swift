@@ -5,7 +5,8 @@
 //  Created by Rin on 2021/10/01.
 //
 
-import UIKit
+//import UIKit
+import Foundation
 import RxDataSources
 
 typealias SettingsSectionModel = SectionModel<SettingsSection, SettingsItem>
